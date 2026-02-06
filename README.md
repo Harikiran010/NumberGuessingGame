@@ -9,26 +9,26 @@ import java.util.Random;
 		 int number = a.nextInt(100) + 1;
 		 int attempt = 0;
 		 int MaxAttempts = 5;
-		 System.out.println("Dammuntey number guess chey ra (1-100):");
+		 System.out.println("Guess the number between (1-100):");
 		 while(attempt < MaxAttempts) {
-			 System.out.println("Enter chey ne guess");
+			 System.out.println("Enter ur guess");
 		   int guess = scn.nextInt();
 		   attempt++;
 		 if(guess == number) {
-			 System.out.println("correct guess chesav kada ra" + attempt + "attempts");
+			 System.out.println("=u guessed correctly" + attempt + "attempts");
 			 break;
 		 } else if (guess < number){
-			 System.out.println("peddha number ra pawan kalyan:");
+			 System.out.println("it was a big number myann:");
 		 } else {
-			 System.out.println("chinna number ra allu arjun:");
+			 System.out.println("it is small number bro:");
 		 }
-		 System.out.println("inka unnay le chance luu..." + (MaxAttempts - attempt));
+		 System.out.println("there are the chances still." + (MaxAttempts - attempt));
 	 }
 		 if(attempt == MaxAttempts) {
 			 System.out.println("correct number is :" + number);
 		 }
 
-	        System.out.println(" baga adav  anukuntunav entraa !");
+	        System.out.println(" well played !");
 	        scn.close();
  }
  }
